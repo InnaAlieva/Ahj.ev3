@@ -79,7 +79,7 @@ const missSpan = document.getElementById('miss');
 function onCellClick(row, col) {
   const cell = gridContainer.querySelector
     `[data-row="${row}"][data-col="${col}"]`
-  );
+  ;
 
   if (cell === goblinCell) {
     hits++;
