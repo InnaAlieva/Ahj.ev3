@@ -1,6 +1,6 @@
 const ROWS = 4;
 const COLS = 4;
-const CELL_SIZE = 100; // px
+
 
 const gridContainer = document.getElementById('gridContainer');
 
