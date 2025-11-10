@@ -1,44 +1,55 @@
-.grid-container {
-  display: grid;
-  justify-content: center;
-  margin-top: 20px;
-  background-color: lemonchiffon;
+* {
+	box-sizing: border-box;
 }
 
-.grid-row {
-  margin-bottom: 10px;
+body {
+	background-color:dimgray;
 }
 
-.grid-row:last-child {
-  margin-bottom: 0;
+.title {
+
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
 }
 
-.grid-row:after {
-  content: "";
-  display: block;
-  clear: both;
+.board {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70vmin;
+	height: 70vmin;
+	border: 1px solid black;
+	margin: 0 auto;
+	background-color: lemonchiffon;
 }
 
-.grid-cell {
-  cursor: url("../img/hammer.png"), auto;
-  width: 150px;
-  height: 150px;
-  margin-right: 10px;
-  float: left;
-  border-radius: 3px;
-  background: #8687ad;
+.cell {
+	width: 25%;
+	height: 25%;
+	box-sizing: border-box;
+	border: 2px solid black;
 }
 
-.grid-cell:last-child {
-  margin-right: 0;
+.hammer {
+	cursor: url('../img/hammer.png'), auto;
+}
+.hammer-boom {
+	cursor: url('../img/hammer-boom.png'), auto;
 }
 
-img {
-  padding: 15px 15px;
+.goblin {
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/goblin.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-.info {
-  text-align: center;
-  margin: 15px;
-  font-size: 20px;
+.status{
+
+	width: 30vmin;
+	border: 1px solid black;
+	margin:  15px auto;
+	background-color: #fff;
 }
