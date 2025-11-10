@@ -27,7 +27,7 @@ export default class Character {
 
         if (this.game.miss === 5) {
           clearInterval(interval);
-          alert("Вы проиграли!"); // eslint-disable-line no-alert
+          alert("Looser!"); // eslint-disable-line no-alert
         }
       }
 
