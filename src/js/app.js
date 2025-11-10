@@ -1,4 +1,9 @@
-import Character from "./init";
+import Board from "./Board";
+import Goblin from "./Goblin";
+import GamePlay from "./GamePlay";
 
-const Game = new Character(document.querySelector(".grid-container"));
-Game.init();
+const board = new Board();
+const char = new Goblin();
+const gameplay = new GamePlay(board, char);
+
+gameplay.init();
