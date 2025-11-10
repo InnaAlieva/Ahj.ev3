@@ -1,0 +1,31 @@
+.grid-container {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  max-width: 80%;
+  max-height: 80%;
+}
