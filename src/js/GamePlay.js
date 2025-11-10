@@ -32,7 +32,7 @@ export default class GamePlay {
     this.goblinCounter = document.createElement("div");
     this.goblinCounter.classList.add("status");
     this.goblinCounter.innerHTML =
-      'Убито гоблинов:<span class="dead">0</span><br>Промахов: <span class="lost">0</span><br>';
+      'Попал:<span class="dead">0</span><br>Мимо: <span class="lost">0</span><br>';
     return this.goblinCounter;
   }
 
@@ -51,12 +51,12 @@ export default class GamePlay {
 
     if (this.dead.textContent >= 10) {
       this.resetScore();
-      alert("Победа!!");
+      alert("Win!");
     }
 
     if (this.lost.textContent >= 5) {
       this.resetScore();
-      alert("Поражение!");
+      alert("Loser!");
     }
 
     this.changeCursor();
